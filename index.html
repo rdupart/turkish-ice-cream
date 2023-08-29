@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Turkish Sign-in Page</title>
+</head>
+<body>
+
+  <div>
+    <h2>Sign in</h2>
+    <input text="Email" value="Email" id="Email" name="Email">
+    <br>
+    <br>
+    <input text="Password" value="Password" id="Password" name="Password">
+    <br>
+    <br>
+
+    <button class="submit">Submit</button>
+    <br>
+    <br>
+
+    <a href="www.google.com">Forgot Password?</a>
+
+  </div>
+ 
+  <style>
+  div {
+width: 300px;
+height: 360px;
+border: 2px solid rgb(146, 146, 146);
+padding: 30px;
+margin: auto;
+box-shadow: 3px 3px 5px 5px rgb(177, 176, 176);
+}
+
+h2 {
+  font-family: Arial;
+}
+
+
+a{
+  font-size: small;
+}
+
+button{
+  position:absolute;
+  cursor: pointer;
+  display: flex;
+  margin: auto;
+}
+ 
+  </style>
+
+  <script type="text/javascript">
+  const a = document.querySelector('button');
+  a.addEventListener("mouseover", moveHover);
+
+function moveHover(){
+  const b = Math.floor(Math.random()*50) + 1;
+  const c = Math.floor(Math.random()*50) + 1;
+
+  a.style.left = b + px;
+  a.style.left = c + px;
+
+}
+
+
+  </script>
+</body>
+</html>
