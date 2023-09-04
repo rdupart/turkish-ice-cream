@@ -4,6 +4,24 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Turkish Sign-in Page</title>
+  
+  
+    <script type="text/javascript">
+    const a = document.querySelector('button');
+    a.addEventListener("mouseover", moveHover);
+  
+  function moveHover(){
+    const b = Math.floor(Math.random()*50) + 1;
+    const c = Math.floor(Math.random()*50) + 1;
+  
+    a.style.left = b + px;
+    a.style.left = c + px;
+  
+  }
+  
+  
+  
+    </script>
 </head>
 <body>
 
@@ -25,47 +43,31 @@
   </div>
  
   <style>
-  div {
-width: 300px;
-height: 360px;
-border: 2px solid rgb(146, 146, 146);
-padding: 30px;
-margin: auto;
-box-shadow: 3px 3px 5px 5px rgb(177, 176, 176);
-}
-
-h2 {
-  font-family: Arial;
-}
-
-
-a{
-  font-size: small;
-}
-
-button{
-  position:absolute;
-  cursor: pointer;
-  display: flex;
+    div {
+  width: 300px;
+  height: 360px;
+  border: 2px solid rgb(146, 146, 146);
+  padding: 30px;
   margin: auto;
-}
- 
-  </style>
-
-  <script type="text/javascript">
-  const a = document.querySelector('button');
-  a.addEventListener("mouseover", moveHover);
-
-function moveHover(){
-  const b = Math.floor(Math.random()*50) + 1;
-  const c = Math.floor(Math.random()*50) + 1;
-
-  a.style.left = b + px;
-  a.style.left = c + px;
-
-}
-
-
-  </script>
+  box-shadow: 3px 3px 5px 5px rgb(177, 176, 176);
+  }
+  
+  h2 {
+    font-family: Arial;
+  }
+  
+  
+  a{
+    font-size: small;
+  }
+  
+  button{
+    position:absolute;
+    cursor: pointer;
+    display: flex;
+    margin: auto;
+  }
+   
+    </style>
 </body>
 </html>
